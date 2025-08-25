@@ -1,0 +1,73 @@
+<!-- <div class="row">
+  <div class="col-7">
+    <div class="card">
+      <div class="card-header bg-success">
+        User List
+      </div>
+      <div class="card-body">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>emailId</th>
+              <th>password</th>
+              <th>fullName</th>
+              <th>mobile</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (item of userList; track $index) {
+              <tr>
+                <td>{{$index + 1}}</td>
+                <td>{{item.emailId}}</td>
+                <td>{{item.password}}</td>
+                <td>{{item.fullName}}</td>
+                <td>{{item.mobileNo}}</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-5">
+    <div class="card">
+      <div class="card-header bg-success">
+        New User
+      </div>
+      <div class="card-body">
+        <div class="row">
+            <div class="col-6">
+                <label for="">Email</label>
+                <input type="text"  [(ngModel)]="userObj.emailId" class="form-control">
+                
+            </div>
+             <div class="col-6">
+                <label for="">passqord</label>
+                <input type="text" [(ngModel)]="userObj.password" class="form-control">
+                
+            </div>
+             <div class="col-6">
+                <label for="">fullname</label>
+                <input type="text" [(ngModel)]="userObj.fullName" class="form-control">
+                
+            </div>
+             <div class="col-6">
+                <label for="">mobile</label>
+                <input type="text" [(ngModel)]="userObj.mobileNo" class="form-control">
+                
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-6 text-center">
+                <button class="btn btn-secondary">Reset</button>
+            </div>
+            <div class="col-6 text-center">
+                <button class="btn btn-success">Save</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->

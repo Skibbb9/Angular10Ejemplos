@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-3">
+        <p>{{courseName}}
+        </p>
+        <p>after uppercase => {{courseName | uppercase}} </p>
+        <p>after lowercase => {{courseDuration | lowercase}} </p>
+        <p>after captail => {{courseDuration | titlecase}} </p>
+    </div>
+    <div class="col-8">
+        <p>{{currentDate}}</p>
+        <p>{{currentDate | date}}</p>
+    </div>
+    <div class="col-3">
+        <p>{{rollNoList}}</p>
+        <p>after slice {{rollNoList | slice:0:2 }}</p>
+    </div>
+    <div class="row">
+        <div class="col-4">
+          <p> {{studentObj}}</p>  
+          <p> {{studentObj | json }}</p>  
+        </div>
+
+        <div class="col-4">
+            name: {{studentObj.name | na }}
+            email: {{studentObj.email | na}}
+              state: {{studentObj.state | na}}
+        </div>
+    </div>
+   
+</div>

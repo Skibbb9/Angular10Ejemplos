@@ -1,0 +1,49 @@
+<table style="width: 100%;">
+    <!-- interpolacion de propiedades -->
+    <tr>
+        <td> {{courseName}}</td>
+        <td>
+            {{productPrice}}
+        </td>
+        <span>{{courseName}}</span>
+    </tr>
+    <td>
+        <!-- {{fullname}} NO PUEDES ACCEDER A UYA VARIABLE QUE NO SE A CREADO (no se a creado en data-binding.ts) -->
+    </td>
+    <tr>
+        <td>
+            <input type="text" value="{{courseName}}">
+        </td>
+        <!-- enlace de propiedades -->
+        <td>
+            <input [type]="inputType" [max]="maxLenght" [minLength]="minChar">
+        </td>
+        <td>
+            <p [class]="myClassName">This is </p>
+        </td>
+    </tr>
+
+    <tr>
+        <!-- enlace de eventos -->
+        <td>
+            <button (click)="showWelcomeMessage()">show message </button>
+        </td>
+        <td>
+              <button (click)="changeCourseName()">show  </button>
+        </td>
+
+        <td>
+            <select (change)="onCityChange()">
+                <option value="">Pune</option>
+                <option value="">nagur</option>
+                <option value="">mumbai</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+        <input type="text" [(ngModel)]="courseName">
+        </td>
+    </tr>
+</table>

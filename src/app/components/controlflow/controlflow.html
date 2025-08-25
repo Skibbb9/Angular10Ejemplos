@@ -1,0 +1,89 @@
+<p>controlflow works!</p>
+<table>
+    <tr>
+        <td>
+         @if (isParaVisiable == true) {
+        <p>This is Sample Para</p>
+      } @else {
+        <small>Samala Tag</small>
+        <h3> FALSE></h3>
+      }
+            
+        </td>
+
+        <td>
+            <button class="btn btn-success" (click)="showP()">Show P</button>
+        </td>
+        <td>
+            <button (click)="hidep()">Hide Button</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @if (startMonthName == "jan" ) {
+                <span> January </span>
+            } @else if (startMonthName == "feb"){
+                <span>Febeaury</span>
+            }
+             @else if (startMonthName == "mar"){
+                <span>march</span>
+            }
+            @else if (startMonthName == "april"){
+                <span>April</span>
+            }
+            @else{
+                <span> Wrong inout</span>
+            }
+        </td>
+        <td>
+            <input type="text" [(ngModel)] = "startMonthName">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+                @for (item of citList; track $index ){
+                     <li>{{item}}</li>
+                }
+               
+
+            </ul>
+        </td>
+        <td>
+
+            <select name="" id="">
+                @for (item of citList; track $index){
+                    <option value="">{{item}}</option>
+                }
+            </select>
+        </td>
+    </tr>
+</table>
+
+<br>
+<table>
+  <thead>
+    <tr>
+      <th>Sr No</th>
+      <th>Name</th>
+      <th>City</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (item of studentlist; track $index){
+      <tr>
+        <td>{{$index}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.city}}</td>
+        <td>
+          @if (item.isActive == true) {
+            <h1>Active</h1>
+          } @else {
+            <h6>De active</h6>
+          }
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>
