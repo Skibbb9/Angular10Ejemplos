@@ -8,6 +8,7 @@ import { Attdirective } from './components/attdirective/attdirective';
 import { GetApi } from './components/get-api/get-api';
 import { PipesEx } from './components/pipes-ex/pipes-ex';
 import { ResourceApi } from './components/resource-api/resource-api';
+import { Login } from './components/login/login';   
 
 export const routes: Routes = [
 //     Aqui creamos las runPostSignalSetFn, aqui accedemos a las rutas de los componentes, se crea mediante URL
@@ -23,6 +24,10 @@ export const routes: Routes = [
 {
     path:'dat-binding',
     component: DataBinding
+},
+{
+    path:'login',
+    component: Login
 },
 {
     path:'signal',
